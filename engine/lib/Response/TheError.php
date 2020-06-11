@@ -1,7 +1,5 @@
 <?php
-$file = file_get_contents(__DIR__.'\error_types.json');
-$ErrorTypes = json_decode($file);
-
+$ErrorTypes = json_decode(file_get_contents(__DIR__.'\error_types.json'));
 final class TheError implements IReturnable
 {
     private $data = array();

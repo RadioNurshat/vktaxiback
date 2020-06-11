@@ -14,7 +14,7 @@ class updateUser extends Method implements IMethod
         $city = $input['city'];
         $user = get_user($user_id);
         if ($user){
-            $db->query("UPDATE `user` SET `user_id` = ?i, `name` = '?s',`surname` = '?s',`city`='?s'",$user_id,$name,$surname,$city);
+            $db->query("UPDATE `user` SET `name` = '?s',`surname` = '?s',`city`='?s',`user_id` = ?i",$name,$surname,$city,$user_id);
             $user = get_user($user_id);
             return new TheSuccess(array(
                 "user"=>$user

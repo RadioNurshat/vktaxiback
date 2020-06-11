@@ -62,11 +62,21 @@
   {
     "id": 206,
     "code": "driver_already_exist",
-    "description": "User is already a driver",
+    "description": "User is already a driver"
   },
   {
     "id": 207,
     "code": "driver_not_confirmed",
     "description": "Driver status has not been confirmed by admin"
+  },
+  {
+    "id": 208,
+    "code": "vehicle_not_exist",
+    "description": "Vehicle does not exist"
+  },
+  {
+    "id" : 209,
+    "code": "vehicle_access_error",
+    "description": "Vehicle access error"
   }
 ]

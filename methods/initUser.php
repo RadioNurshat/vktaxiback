@@ -19,7 +19,7 @@ class initUser extends Method implements IMethod
             $date = new DateTime('now');
             $date->setTimezone(new DateTimeZone('UTC'));
             $creation_time = $date->format('Y-m-d H:i:s.u T');
-            $insert = $db->query("INSERT INTO `user` (`user_id`,`name`,`surname`,`creation_time`,`status`) VALUES (?i,'?s','?s','?s')", $user_id, $name, $surname, $creation_time);
+            $insert = $db->query("INSERT INTO `user` (`user_id`,`name`,`surname`,`creation_time`) VALUES (?i,'?s','?s','?s')", $user_id, $name, $surname, $creation_time);
             return new TheSuccess(array(
                 "user_status" => "partial"
             ));

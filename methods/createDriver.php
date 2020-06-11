@@ -6,7 +6,7 @@ class createDriver extends Method implements IMethod
 
     public function Execute(): IReturnable
     {
-        $driver_id = $this->data['driver_id'];
+        $driver_id = $this->data['vk_user_id'];
         $phone = $this->data['phone'];
 
 
@@ -20,8 +20,9 @@ class createDriver extends Method implements IMethod
             return new TheError(206);
         }
     }
+
     public static $ParamsList = array(
-        'driver_id' => 'integer',
+        'vk_user_id' => 'integer',
         'phone'=>'string'
     );
     public const CallableName = 'createDriver';

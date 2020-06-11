@@ -6,7 +6,7 @@ class getDriver extends Method implements IMethod
 
     public function Execute(): IReturnable
     {
-        $driver = get_driver($this->data['driver_id']);
+        $driver = get_driver($this->data['vk_user_id']);
         if ($driver){
             if ($driver['confirmed'] == 1){
                 return new TheSuccess($driver);
@@ -20,6 +20,6 @@ class getDriver extends Method implements IMethod
     public const CallableName = 'getDriver';
     public const RequireVerification = true;
     public static $ParamsList = array(
-        'driver_id' => 'integer'
+        'vk_user_id' => 'integer'
     );
 }

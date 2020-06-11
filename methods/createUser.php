@@ -13,14 +13,14 @@ class createUser extends Method implements IMethod
         $surname = $input['surname'];
         $city = $input['city'];
         $user = get_user($user_id);
-        if ($user){
+        if (!$user){
             return new TheError(200);
         }
         if ($user["status"]=='complete'){
            return new TheError(201);
         }
         if ($user["status"]=='partial'){
-            $db->query("UPDATE `user` SET `user_id` = ?i, `name` = '?s',`surname` = '?s',`city`='?s',`status`='?s'",$user_id,$name,$surname,$city,'complete');
+            $db->query("UPDATE `user` SET `name` = '?s',`surname` = '?s',`city`='?s',`status`='?s'",$name,$surname,$city,'complete');
             return new TheSuccess(array(
                 "user_status"=>"complete"
             ));
