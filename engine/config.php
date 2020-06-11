@@ -4,7 +4,7 @@
     const VK_SERVICE_ACCESS_KEY = 'ca00c750ca00c750ca00c750b6ca6f552dcca00ca00c750943d71494146519ae4d9c5ea';
 
     //Verification
-    const SIGN_VERIFICATION_REQUIRED = true;
+    const SIGN_VERIFICATION_REQUIRED = false;
     const PARAMS_VERIFICATION_REQUIRED = false;
 
 

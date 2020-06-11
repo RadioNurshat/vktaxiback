@@ -28,5 +28,45 @@
     "id": 105,
     "code": "wrong_method_parameter",
     "description": "Wrong request parameter"
+  },
+  {
+    "id": 200,
+    "code": "no_such_user",
+    "description": "Invalid user id or user does not exist"
+  },
+  {
+    "id": 201,
+    "code": "user_already_exist",
+    "description": "User already exist"
+  },
+  {
+    "id": 202,
+    "code": "user_not_initialized",
+    "description": "User is not initialized"
+  },
+  {
+    "id": 203,
+    "code": "invalid_pref",
+    "description": "User preference does not exist"
+  },
+  {
+    "id": 204,
+    "code": "invalid_city",
+    "description": "City with this code does not exist"
+  },
+  {
+    "id": 205,
+    "code": "user_not_driver",
+    "description": "Current user is not a driver"
+  },
+  {
+    "id": 206,
+    "code": "driver_already_exist",
+    "description": "User is already a driver",
+  },
+  {
+    "id": 207,
+    "code": "driver_not_confirmed",
+    "description": "Driver status has not been confirmed by admin"
   }
 ]

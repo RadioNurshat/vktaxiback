@@ -17,7 +17,7 @@ interface IMethod{
  * Class Method
  * Every callable class should have public constant "CallableName", that will be used as name of the method in API
  */
-abstract class method
+abstract class Method
 {
     public abstract function Execute(): IReturnable;
 

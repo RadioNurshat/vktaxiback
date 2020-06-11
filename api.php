@@ -5,7 +5,8 @@
  * Entry point of RNAPI, VKTaxi edition
  *
  */
-error_reporting(E_ERROR | E_WARNING | E_PARSE | E_ALL);
+// access-key ?vk_access_token_settings=notify%2Cmenu&vk_app_id=7311997&vk_are_notifications_enabled=0&vk_is_app_user=1&vk_is_favorite=0&vk_language=ru&vk_platform=desktop_web&vk_ref=other&vk_user_id=395487207&sign=4MfpMCfI5RyxYxgLqlOtdicGZp2Qh2MmHcDwfFucBc8
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
 include 'engine/lib.php';
 include 'engine/config.php';
 

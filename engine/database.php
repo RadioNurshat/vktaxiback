@@ -3,7 +3,6 @@ include 'lib/external_libraries/Mysql/Mysql.php';
 include 'lib/external_libraries/Mysql/Exception.php';
 include 'lib/external_libraries/Mysql/Statement.php';
 include_once 'config.php';
-
 //Connect to Database MySQL
 $db = Mysql::create(DATABASE_SERVER,DATABASE_LOGIN,DATABASE_PASSWORD)
     ->setCharset('utf8');
