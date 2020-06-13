@@ -12,7 +12,7 @@ class deleteVehicle extends Method implements IMethod
         if ($vehicle){
             if ($vehicle['owner_id'] == $owner_id){
                 if (delete_vehicle($vehicle_id)){
-                    return new TheSuccess('Vehicle deleted');
+                    return new TheSuccess('vehicle deleted');
                 }else{
                     return new TheError(208);
                 }

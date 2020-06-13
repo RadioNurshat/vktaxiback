@@ -5,7 +5,8 @@
     "require": {
         "php": "^7.3",
         "ext-mysqli": "*",
-        "ext-json": "*"
+        "ext-json": "*",
+        "vkcom/vk-php-sdk": "dev-master"
     },
     "license": "MIT",
     "minimum-stability": "dev"

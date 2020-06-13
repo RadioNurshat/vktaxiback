@@ -77,6 +77,21 @@
   {
     "id" : 209,
     "code": "vehicle_access_error",
-    "description": "Vehicle access error"
+    "description": "You don't have access to edit this vehicle"
+  },
+  {
+    "id": 210,
+    "code": "no_routes",
+    "description": "There's no routes found for this request"
+  },
+  {
+    "id": 211,
+    "code": "route_access_error",
+    "description": "You do not have access to edit this route"
+  },
+  {
+    "id": 212,
+    "code": "no_such_city",
+    "description": "City not found"
   }
 ]

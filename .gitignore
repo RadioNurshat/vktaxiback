@@ -3,3 +3,4 @@ tests.php
 composer.phar
 index.php
 .htaccess
+vendor
